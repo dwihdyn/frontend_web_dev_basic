@@ -8,6 +8,81 @@
     <title>Group 2 Work</title>
 </head>
 <body>
+    <h6><a href ="https://code.nextacademy.com/lessons/group-activity/890" target="_blank">Click here</a> and scroll to 'Group2' to see project details</h6>
+    <!-- type="text" : name -->
+    <form>
+        First name :<br>
+        <input type="text" name="firstname"></br>
+        Last name : <br>
+        <input type="text" name="lastname">
+    </form>
+
+    <!-- type="radio" : gender -->
+    <form>
+        <input type="radio" name="gender" value="male">Male<br>
+        <input type="radio" name="gender" value="female">Female<br>
+        <input type="radio" name="gender" value="other" checked>Other<br>
+    </form>
+
+
+    <!-- 2nd method to create gender list, using <label> -->
+    <form>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male"><br>
+
+        <input for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female"><br>
+        
+        <label for="other">Other</label>
+        <input type="radio" name="gender" id="other" value="other"><br><br>
+        
+        <input type="submit" value="Submit">    <!-- actually submit value -->
+    </form>
+
     
+
+
+    <!-- for type="submit", we need to create php to redirect. hence ignore it -->
+
+
+
+
+    <!-- button creation with css style -->
+    <button class="button"> stylish button </button>
+
+    <!-- 2nd method to use button. input allow user to enter the data into temporary database -->
+    <input type="submit" value="Submit">
+
+    
+    <textarea rows="4" cols="50">
+        testing to use textarea html. you can add/delete more words in it too!
+    </textarea>
+
+    
+    <br>
+    <hr size=30 width="100%">    <!-- as partition -->
+    <br>
+    <hr>
+
+    <!-- Altogether -->
+    <h1>Fill up your info here</h1>
+    <form>
+        First name :<br>
+        <input type="text" name="firstname"></br>
+        Last name : <br>
+        <input type="text" name="lastname">
+
+        <input type="radio" name="gender" value="male">Male<br>
+        <input type="radio" name="gender" value="female">Female<br>
+        <input type="radio" name="gender" value="other" checked>Other<br>
+
+        <textarea rows="4" cols="50">
+                tell us about yourself in 200 words
+        </textarea>
+
+        <input type="submit" value="Submit">
+    </form>    
+
+    <hr/>
 </body>
 </html>

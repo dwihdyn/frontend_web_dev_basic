@@ -21,3 +21,11 @@ h6::before{
     color : red;
     font-weight: bold;
 }
+
+/* adding background that stick along the way scrolling */
+body{
+    background-image: url(../images/logo.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed; /* or scroll */
+}
