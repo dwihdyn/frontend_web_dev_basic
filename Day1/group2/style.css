@@ -8,7 +8,24 @@
     cursor: pointer;
 }
 
+/* background setting */
 body{
+    background: content-box radial-gradient(crimson,skyblue);
     background-color: lightblue;
-    background-image: url("../images/logo.jpg")
+    background-image: url("../images/logo.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: fixed;
+}
+
+/* changes on the first letter of the selected group (h1,h2,h3,p,...) */
+h1::first-letter {
+    font-size: 200%;
+    color:purple;
+}
+
+/* changes on the first line of the selected group (h1,h2,h3,p,...) */
+form::first-line {
+    font-size: 200%;
+    color:darkblue;
 }
