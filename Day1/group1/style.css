@@ -1,7 +1,7 @@
 #border_application{
     border: 2px solid black ;
-    border-radius: ;
-    border-style: ;
-    border-width: ;
+    border-radius: 10px;
+    border-style: 10px;
+    border-width: 10px;
     border-color: darkred ;
 }
