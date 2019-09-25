@@ -1,7 +1,23 @@
 #border_application{
-    border: 2px solid black ;
+    border: 2px solid black;
     border-radius: 10px;
     border-style: 10px;
     border-width: 10px;
-    border-color: darkred ;
+    border-color: darkred;
+}
+
+/* p::after is to add extra notes AFTER the sentence to all of the selected parameter (h1,p,h2,...) */
+p::after{
+    content : "- remember this yaaaa";
+    background-color: goldenrod;
+    color : yellow;
+    font-weight: bold;
+}
+
+/* p::after is to add extra notes BEFORE the sentence to all of the selected parameter (h1,p,h2,...) */
+h6::before{
+    content: "Read this";
+    background-color: yellow;
+    color : red;
+    font-weight: bold;
 }
