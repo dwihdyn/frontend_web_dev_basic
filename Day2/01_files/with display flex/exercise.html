@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="exercise-styles.css" />
+    <title>Layout</title>
+  </head>
+  <body style="margin: 0;">
+    <nav id="navbar"
+      style="display: flex;
+      justify-content: space-between;
+      align-items: center;">
+      <div>
+        <span>Home</span>
+        <span>Contact Us</span>
+      </div>
+
+      <span>Menu</span>
+    </nav>
+
+    <section id="header" style="margin: 20px;">
+      <h1>Let's practise position and display properties!</h1>
+    </section>
+
+    <section id="description-parent">
+      <div class="description-child">
+        <p class="description-grandchild">
+          <em>Hints:</em> <br />
+          We are three divs in a row
+        </p>
+      </div>
+
+      <div class="description-child">
+        <p class="description-grandchild">
+          With our content centralised horizontally and vertically
+        </p>
+      </div>
+
+      <div class="description-child">
+        <p class="description-grandchild">
+          Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Cumque, tempore?
+        </p>
+      </div>
+    </section>
+
+    <section id="image-container">
+      <div id="image-wrapper">
+        <span>I'm a span tag!</span>
+        <img
+          src="https://cdn.britannica.com/s:700x450/02/172402-050-3261C9D1/European-badger.jpg"
+          alt="Badger"
+        />
+        <img
+          src="http://blogs.discovermagazine.com/crux/files/2018/10/amanita-muscaria.jpg"
+          alt="Mushrooms"
+        />
+      </div>
+    </section>
+  </body>
+</html>

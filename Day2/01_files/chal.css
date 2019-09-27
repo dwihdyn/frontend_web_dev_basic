@@ -1,0 +1,67 @@
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+.middle{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.messages {
+    margin-right: 350px;
+    padding-top:80px;
+    /* text-align; */
+    margin-left: 10%;
+}
+
+.main_message {
+    /* padding-top:60px; */
+    font-size: 300%;
+}
+
+.side_message {
+    padding-top:20px;
+    font-size: 150%;
+}
+
+.buttons{
+    margin-top: 40px;
+}
+
+.email{
+    border: bottom;
+
+}
+
+.picture {
+    padding-top: 30px;
+}
+
+
+
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.second {
+    padding-left: 75px;
+}
+
+.fourth {
+    padding-left: 102px;
+}
+
+

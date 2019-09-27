@@ -1,0 +1,19 @@
+
+.placeholder-text{
+    border: 1px solid black;
+    display: inline-block;  /* putting all 3 textbox in one line & fill it the whole block */
+    vertical-align: bottom; /* align vertically*/
+    height:100px; /* resize such that all boxes fit in one long block */
+    width:410px;
+}
+
+
+
+img{
+    display: block;
+    margin: 0 auto;
+    width:200px;
+    margin-bottom: 10px;
+    
+}
+

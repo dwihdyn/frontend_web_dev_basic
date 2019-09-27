@@ -1,0 +1,23 @@
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#middle{
+    display: flex;
+    margin: 2px dotted black;
+
+}
+
+#messages{
+    display: block;
+    margin: 2px solid black;
+    
+}
+
+#images{
+    width: "100px";
+    height: "100px";
+}
+

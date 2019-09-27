@@ -1,0 +1,31 @@
+.my-img{
+    display: inline-block;   /* picture takes entire sideblock, hence show all pictures listed downward */
+    margin: 0 auto;     /* put all images to center */
+}
+
+.first-div{
+    position: relative;     /* div positioned according to top bottom left right score */
+    top: 50px;
+    bottom: 40px;
+    left: 500px;
+    right: 60px;
+
+}
+
+.second-div{
+    position: fixed; /* div will follow (anchored) the page */
+    top: 50px;
+    bottom: 40px;
+    left: 30px;
+    right: 60px;
+
+}
+
+.third-div{
+    position: sticky; /* div will follow (anchored) the page */
+    top: 200px;
+    bottom: 40px;
+    left: 30px;
+    right: 60px;
+
+}

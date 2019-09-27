@@ -1,0 +1,64 @@
+body {
+  /* Why do we specify three values? */
+  font-family: "Courier New", Courier, monospace;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+body div {
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+}
+
+.outline {
+  border: 1px dashed red;
+}
+
+.container {
+  border: 1px solid black;
+  height: 100vh;
+}
+
+#red {
+  background-color: rgb(252, 151, 151);
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+
+#blue-parent {
+  position: relative;
+  top: 100px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+  width: 50vw;
+  height: 50vh;
+}
+
+#blue {
+  background-color: rgb(163, 190, 245);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#green {
+  background-color: #b9ebbf;
+  position: fixed;
+  top: 20px;
+  right: 50%;
+}
+
+#yellow {
+  background-color: #f1f19b;
+  position: sticky;
+  top: 20px;
+}
+
+h3[id] {
+  text-align: center;
+}
