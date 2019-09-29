@@ -1,0 +1,27 @@
+body {
+  font-family: "Share Tech Mono", monospace !important;
+}
+
+h1 {
+  font-family: "Share Tech Mono", monospace;
+}
+
+p {
+  font-family: "Share Tech Mono", monospace;
+  margin-top: 500px;
+  border: 2px solid black;
+}
+
+.paragraphs {
+  margin-top: 50px;
+}
+
+h4 {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  h4 {
+    display: block;
+  }
+}

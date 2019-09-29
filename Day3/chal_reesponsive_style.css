@@ -1,7 +1,20 @@
-#navbar{
+nav{
+    position: fixed;
+    background: white;
+    z-index: 9999;      /* ensuring that our nav will always on top on everything when scroll*/
+    width: 100%;        /* 'flex' alternative : ensure nav takes up whole block */
+    padding: 10px;
+    top: 0; left: 0;    /* covers the remaining empty spaces */
+
+}
+
+ol{
     display: flex;
     justify-content: space-between;
-    
+}
+
+li{
+    list-style: none;   /* remove the numbering list */
 }
 
 #middle{
@@ -45,6 +58,8 @@
 
 .button{
     margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 

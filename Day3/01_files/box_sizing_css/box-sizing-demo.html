@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SIZING THEM BOXES</title>
+  </head>
+  <body>
+    <section>
+      <h2>
+        Why do we need set box-sizing?
+      </h2>
+      <ol>
+        <li>
+          To allow us to include the element's padding and border in its width
+        </li>
+        <li>
+          <strong>NOTE!</strong>
+
+          Margin is NOT included
+        </li>
+      </ol>
+    </section>
+
+    <!-- Parent has a width of 500px -->
+    <section class="container">
+      <!-- Each individual child has a width of 25% (= 125px) -->
+      <div class="squares"></div>
+      <div class="squares"></div>
+      <div class="squares"></div>
+      <div class="squares"></div>
+    </section>
+
+    <!-- 
+width of children:
+   25% * 500px = 125px
+
+border: 5px 
+total: 10px
+
+Using box-sizing: content-box; (default value) - 
+total width: 125 + 5 + 5 = 135px
+As a result, the children will overflow the parent because 4 * 135 = 540px, which is more than 500px.
+
+On the other hand, using box-sizing: border-box; will look like this - 
+The total width of each child will always be 125px
+It will account for the border (125 - 5 - 5 = 115) so the content will take up 115px, ensuring that the total width of the element always remains as 125px
+-->
+  </body>
+</html>
