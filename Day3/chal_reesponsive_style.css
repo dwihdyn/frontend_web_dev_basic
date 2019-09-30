@@ -1,3 +1,9 @@
+#content{
+    height: calc(100vh - (70px + 70px - 60px));
+    min-height: 300px; /* heights will recalculate when the user screen is below 300px*/
+
+}
+
 nav{
     position: fixed;
     background: white;

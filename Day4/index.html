@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- Printing out : Using js Directly in html -->
+    <div>
+      <script>
+        document.write("document.write : print text in webpage");
+        console.log("console.log : print text in console");
+        alert("alert : pop up the text");
+      </script>
+    </div>
+
+    <!-- Using js by linking from different docs -->
+    <script src="script.js"></script>
+
+    <!-- let vs const (never uses var, its old & will create problem) -->
+    <div>
+      <script>
+        let cash = 100; // can reassign let
+        cash = 300;
+        const cashcash = 200; // cant reassign const
+        document.write(cash);
+        console.log(cashcash);
+      </script>
+    </div>
+
+    <!-- Using `` as string application -->
+    <div>
+      <script>
+        let noOfProfit = 200;
+        let text = `Yesterday, I made $${noOfProfit} and i decide to spend it on cars`;
+        document.write(text);
+        let sentence = `
+        This is a long sentence. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Voluptates, velit dolores porro vero natus ducimus laudantium fugiat aperiam dolorum 
+        reprehenderit, corrupti at placeat? Et libero, hic tempore perspiciatis dicta debitis 
+        minima nesciunt molestiae. Dolorum nostrum blanditiis fugit? Sapiente iusto distinctio 
+        fugiat, aliquid nesciunt ipsa? Cum aliquam quo quidem minus vitae! Quia voluptatem 
+        explicabo repudiandae error possimus voluptatum veniam excepturi iste. Debitis tenetur 
+        libero rerum itaque odit. Voluptate esse officiis aperiam, ipsum delectus eum laborum 
+        `;
+        alert(sentence);
+      </script>
+    </div>
+
+    <!-- Array & Objects -->
+    <div>
+      <div>
+        <script>
+          const x = "first word";
+          const y = "last word";
+
+          let wordarray = [x, y];
+          document.write(wordarray);
+        </script>
+      </div>
+
+      <div>
+        <script>
+          let names = ["lorem", "ipsum", "abc", "steve", "john"];
+          let numbers = [2, 3, 45, 2, 3, 3, 3, 3];
+          let bool = [true, true, false, false, true];
+          let mixed = ["hello", 1, 2, false, ["array", "inside array", true]];
+
+          document.write(names);
+          document.write(numbers);
+          document.write(bool + "\n" + mixed);
+        </script>
+      </div>
+
+      <div>
+        <script>
+          let mycar = {
+            brand: "honda",
+            model: "jazz new",
+            door: 5,
+            features: ["max speed 200 kmph", "very cool"],
+            owner: {
+              name: "Dwi",
+              age: 72,
+              fav_food: ["chicken", "fish"]
+            }
+          };
+          document.write(mycar.owner.fav_food[1]);
+          document.write(mycar["owner"]["fav_food"][0]);
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

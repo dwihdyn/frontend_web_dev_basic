@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Group3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+
+    <div>
+      <ol class="heading">
+        <li>
+          .shift() / .pop()' : to remove the FIRST / LAST record of the array.
+          Press button below to see in action
+        </li>
+        <li>
+          .splice(index, remove_how_many, new_word1, new_word2,....) : to add
+          new things on selected index location, and remove 'n' amount of words
+        </li>
+        <li>
+          .slice(start,end) : shows the list of items from start to end array
+        </li>
+      </ol>
+
+      <!-- call out the list of fruits in html -->
+      <p id="demo"></p>
+
+      <button onclick="removeFirstButton()">Remove first</button>
+      <button onclick="removeLastButton()">Remove last</button>
+      <button onclick="removeAndAdd()">Remove and Add</button>
+
+      <script>
+        let fruits = ["apple", "banana", "mango", "durian", "remove me"]; // create list of fruits
+        document.getElementById("demo").innerHTML = fruits; // display list of fruits in browser. | by clicking assigned "demo", it will summon the predefined innerHTML
+
+        function removeLastButton() {
+          fruits.pop(); // remove the last record
+          document.getElementById("demo").innerHTML = fruits; // display the remaining fruits
+        }
+
+        function removeFirstButton() {
+          fruits.shift();
+          document.getElementById("demo").innerHTML = fruits;
+        }
+
+        function removeAndAdd() {
+          fruits.splice(1); //, 1, "fig", "jackfruit");
+          document.getElementById("demo").innerHTML = fruits;
+        }
+
+        /*
+        fruits.splice(0) : save - | removes 1,2,3,...,n
+        fruits.splice(1) : save 1 | removes  2,3,....,n
+        ...
+        fruits.splice(n) : save 1,2,3,...,n | removes -
+        */
+      </script>
+    </div>
+  </body>
+</html>
