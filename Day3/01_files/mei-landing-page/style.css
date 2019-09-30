@@ -1,0 +1,164 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  /* Minimum 16x, and grows more slowly */
+  /* (half the rate of screen growth) */
+  font-size: calc(16px + 0.5vw);
+  /* Line-height based on font-size, */
+  /* with addition viewport-relative growth */
+  line-height: calc(1.1em + 0.5vw);
+}
+
+#navbar {
+  height: 70px;
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#logo {
+  font-weight: 700;
+}
+
+#content {
+  margin: 15px;
+  height: calc(100vh - (70px + 70px + 60px));
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+#call-to-action {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 280px;
+}
+
+#cta-wrapper {
+  width: 350px;
+}
+
+.cta {
+  font-size: calc(20px + 1.5vw);
+  font-weight: 700;
+}
+
+.opt-in-wrapper {
+  width: 240px;
+}
+
+#opt-in-email {
+  width: 100%;
+  height: 30px;
+  border-bottom: 2px solid black;
+  text-align: center;
+  margin-bottom: 1px;
+  font-size: 1rem;
+}
+
+#notify-me {
+  border-radius: 0;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  margin: 8px auto;
+  color: white;
+  background-color: #262626;
+}
+
+#image {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#shoes-wrapper {
+  position: relative;
+}
+
+#shoes {
+  width: 100%;
+  min-width: 280px;
+  max-width: calc(100vh - (70px + 70px + 30px));
+}
+
+@media (max-width: 425px) {
+  #image {
+    display: none;
+  }
+}
+
+.social-icons {
+  margin: 30px 0;
+}
+
+.social-icons img {
+  width: 20px;
+}
+
+.social-icons img:not(:first-child) {
+  margin-left: 20px;
+}
+
+#footer {
+  height: 70px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.contact-wrapper {
+  display: flex;
+  font-size: 1rem;
+}
+
+.contact-wrapper small {
+  line-height: 1rem;
+}
+
+.contact-heading {
+  margin-right: 10px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#chat-logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(70%, -30%);
+}
+
+#chat-logo-img {
+  width: 60px;
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  #call-to-action {
+    justify-content: flex-start;
+  }
+
+  .cta {
+    margin-top: 0;
+  }
+
+  #image {
+    align-items: flex-start;
+  }
+}
+
+*:focus {
+  outline: none;
+}
