@@ -1,0 +1,17 @@
+.add-style {
+  font-weight: bold;
+  border: 0.5px dotted red;
+}
+
+.dumb-style {
+  margin: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: red;
+}
+
+.another-dumb-style {
+  white-space: nowrap;
+  width: 50px;
+  overflow: hidden;
+  text-overflow: "----";
+}
