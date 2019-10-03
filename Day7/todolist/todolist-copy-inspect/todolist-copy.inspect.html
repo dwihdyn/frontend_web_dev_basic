@@ -1,0 +1,250 @@
+<head>
+  <link
+    href="https://fonts.googleapis.com/css?family=Bitter&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<style>
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  body {
+    background: #09091f;
+    color: white;
+    font-size: 20px;
+    font-family: "Bitter", serif;
+    letter-spacing: 1px;
+  }
+
+  #list {
+    width: 100%;
+    max-width: 495px;
+    min-height: 60px;
+    margin: auto;
+    margin-top: 1em;
+    padding: 0;
+    background: hsl(236, 32%, 26%);
+  }
+
+  #list li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    transition: opacity 300ms linear;
+  }
+
+  #list li:hover {
+    background: #484b6f;
+  }
+
+  #list li:not(:last-child) {
+    border-bottom: solid 1px #7b7b7b;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 60px;
+    padding: 2px;
+    margin: auto;
+    margin-top: 10%;
+  }
+
+  button {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: #fc2f70;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    height: 100%;
+    width: 200px;
+    transition: 0.45s;
+  }
+
+  button::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #bcc1ff;
+    transform-origin: center;
+    transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+  }
+
+  button:hover {
+    cursor: pointer;
+    color: #161616;
+  }
+
+  button:hover::before {
+    transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
+  }
+
+  button:disabled {
+    background: #464646;
+    text-decoration: line-through;
+  }
+
+  input {
+    color: white;
+    font-size: inherit;
+    font-family: inherit;
+    background-color: hsl(236, 32%, 26%);
+    padding: 0.35em 0.45em;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  input::placeholder {
+    color: hsla(0, 0%, 100%, 0.6);
+  }
+
+  span {
+    position: absolute;
+    background-color: #fc2f70;
+    transform-origin: center;
+    transition: transform 0.5s ease;
+  }
+
+  .bottom,
+  .top {
+    height: 1px;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+  }
+
+  .left,
+  .right {
+    width: 1px;
+    top: 0;
+    bottom: 0;
+    transform: scaleY(0);
+  }
+
+  .top {
+    top: 0;
+  }
+
+  .bottom {
+    bottom: 0;
+  }
+
+  .left {
+    left: 0;
+  }
+
+  .right {
+    right: 0;
+  }
+
+  input:focus ~ .top,
+  input:focus ~ .bottom {
+    transform: scaleX(1);
+  }
+
+  input:focus ~ .left,
+  input:focus ~ .right {
+    transform: scaleY(1);
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .troll {
+    animation: spin 0.15s infinite;
+  }
+</style>
+
+<form id="form">
+  <input id="input" type="text" placeholder="Type something..." />
+  <span class="bottom"></span>
+  <span class="right"></span>
+  <span class="top"></span>
+  <span class="left"></span>
+  <button id="btn" ype="submit" disabled id="btn">Add Task</button>
+</form>
+
+<ul id="list">
+  <li>Eat Sleep Code Repeat</li>
+</ul>
+
+<script>
+  const input = document.getElementById("input"),
+    btn = document.getElementById("btn"),
+    list = document.getElementById("list"),
+    form = document.getElementById("form");
+  (input.oninput = function() {
+    //===== Q3 ans : Disable the add button when the text input is less than 3 character
+    // input.value.length > 3 ? (btn.disabled = !1) : (btn.disabled = !0);
+    if (input.value.length > 3) {
+      btn.disabled = false;
+    } else {
+      btn.disabled = true;
+    }
+  }),
+    (form.onsubmit = function(t) {
+      //   if ((t.preventDefault(), input.value.length > 0)) {  // preventDefault is to ensure the page dont refresh as a whole, and delete all of the list
+      //     const t = document.createElement("li");
+      //     (t.innerText = input.value), list.appendChild(t), (input.value = "");
+      //   }
+      //===== Q1 ans : Allow users to add any text input into the list
+      if (t.preventDefault() || input.value.length > 0) {
+        const t = document.createElement("li");
+        t.innerText = input.value;
+        list.appendChild(t);
+        input.value = ""; //===== Q4 ans : Clear text input after each submission
+      }
+      list.children.length > 9 && document.body.classList.add("troll");
+    }),
+    (list.onclick = function(t) {
+      //   const e = t.target;
+      //   (e.style.opacity = 0),
+      //     setTimeout(function() {
+      //       e.parentElement.removeChild(e);
+      //     }, 300);
+      //===== Q2 ans : Users can delete a task from the list by clicking on it
+      const e = t.target;
+      e.style.opacity = 0;
+      setTimeout(function() {
+        e.parentElement.removeChild(e);
+      }, 300);
+    });
+</script>
