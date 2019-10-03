@@ -16,3 +16,4 @@ Projects done :
     <li>Day7 : To-do list - (DOM manipulation test) by javascript</li>
     <li>Day7 : Hangman game - (DOM manipulation test) by javascript</li>
 </ol>
+bla
