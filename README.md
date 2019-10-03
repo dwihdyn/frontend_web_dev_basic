@@ -11,7 +11,7 @@ Projects done :
     <li>Day5 : Longest name - (loop test) by javascript</li>
     <li>Day5 : Number Guessing game - (loop test) by javascript</li>
     <li>Day5 : Roman Numerals Translation - (loop test) by javascript</li>
-    <li>Day5 : <strong>Incomplete </strong> Triangle creation - (loop test) by javascript</li>
+    <li>Day5 : <span style="color:purple;font-weight:bold">Incomplete </span> Triangle creation - (loop test) by javascript</li>
     <li>Day6 : Elusive Button by javascript</li>
     <li>Day7 : To-do list by javascript</li>
 </ol>
