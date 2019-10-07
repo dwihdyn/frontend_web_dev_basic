@@ -20,7 +20,17 @@ function createAlphabet() {
 window.onload = createAlphabet();
 
 // RANDOMLY LOOP THROUGH WORDS TO GUESS //
-let words = [];
+let words = [
+  "banana",
+  "pineapple",
+  "lemon",
+  "apple",
+  "orange",
+  "pear",
+  "peach",
+  "coconut",
+  "durian"
+];
 
 // FUNCTION TO CLICK EACH LETTER AND DISPLAY CORRECT LETTERS //
 function enterGuessLetter() {

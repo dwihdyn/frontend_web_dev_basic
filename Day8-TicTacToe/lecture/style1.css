@@ -1,0 +1,24 @@
+.game-area {
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap; /* ensure 9 boxes distributes on 3 each */
+  margin: 0 auto; /* 0 for margin-top and margin-bot†om, auto for margin-left and margin-right */
+  width: 70vh; /* 70% with respect to its height, because for desktop, its wide*/
+  height: 70vh;
+}
+
+@media (max-width: 426px) {
+  .game-area {
+    width: 80vw; /* 80% with respect to its weight, because for phone, its tall*/
+    height: 80vw;
+  }
+}
+
+.box {
+  border: 1px solid black;
+  width: calc(100% / 3); /* ensure each box in the row will get 3 equal boxes */
+  height: calc(
+    100% / 3
+  ); /* ensure each box in the column will get 3 equal boxes */
+  box-sizing: border-box;
+}

@@ -15,4 +15,6 @@ Projects done :
     <li>Day6 : <strong>| Incomplete | </strong> Elusive Button by javascript</li>
     <li>Day7 : To-do list - (DOM manipulation test) by javascript</li>
     <li>Day7 : <strong>| Incomplete | </strong> Hangman game - (DOM manipulation test) by javascript</li>
+    <li>Day8 : <strong>| Incomplete | </strong> TicTacToe - by html & css</li>
+    <li>Day8 : <strong>| Incomplete | </strong> TicTacToe - by javascript</li>
 </ol>

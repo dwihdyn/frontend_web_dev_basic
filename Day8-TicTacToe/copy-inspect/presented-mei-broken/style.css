@@ -1,0 +1,117 @@
+body {
+  background-color: #222831;
+  color: #b7e1b5d7;
+  font-family: "Mansalva";
+  font-size: 20px;
+  height: 90vh;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+}
+
+#game-board {
+  /* display: inline-grid; */
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 150px 150px 150px;
+}
+
+.grid-item {
+  max-width: 150px;
+  max-height: 150px;
+  background-color: #222831;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-1 {
+  border-left: 9px dotted #c5d86d;
+  border-right: 9px dotted #c5d86d;
+}
+
+.row-1 {
+  border-top: 9px dotted #c5d86d;
+  border-bottom: 9px dotted #c5d86d;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+#sidebar > div {
+  width: 150px;
+  height: 150px;
+  border: 8px solid #222831;
+}
+
+#game-announcement-container {
+  height: 10vh;
+}
+
+#game-area {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#current-player {
+  flex-grow: 2;
+}
+
+#restart-button {
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  background-color: #f05d23;
+  color: #fefefe;
+  width: 100%;
+  padding: 0.6rem;
+}
+
+#restart-button:hover {
+  background-color: black;
+  color: #f05d23;
+}
+
+img {
+  /* Disable highlighting on image */
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+
+  /* Rules below not implemented in browsers yet */
+  -o-user-select: none;
+  user-select: none;
+}
+
+@media (max-width: 500px) {
+  #sidebar {
+    flex-direction: row;
+    order: 1;
+    margin: 10px 0;
+  }
+
+  #sidebar > div {
+    width: 100px;
+    height: 100px;
+  }
+
+  #game-board {
+    order: 2;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+  }
+
+  .grid-item {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
