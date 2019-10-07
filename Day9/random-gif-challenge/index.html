@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>API Challenge</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <button value="Refresh page" onClick="window.location.reload();">
+      refresh me
+    </button>
+    <input type="button" id="clickMe" value="new gif" onclick="getGif();" />
+    <input type="text" id="tag" placeholder="enter keyword" />
+
+    <h2>
+      <a
+        href="https://code.nextacademy.com/lessons/challenge--build-with-api-s---part-2/863"
+        >API Challenge - gif</a
+      >
+      Be patience, it takes few minutes sometimes to load the gif
+    </h2>
+
+    <!-- method 1
+    <img
+      src="https://media.giphy.com/media/LW5vBvAb48Oe9OoEKT/giphy.gif"
+      alt="moving gif"
+      id="gif-here"
+    /> -->
+
+    <!-- method 2 -->
+    <div id="gif-here">
+      <img
+        src="https://media.giphy.com/media/LW5vBvAb48Oe9OoEKT/giphy.gif"
+        alt="moving gif"
+      />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Vibes", cursive;
+}
+
+.container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#buttons {
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#buttons button {
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px;
+  outline: none;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+#reset {
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-family: "Vibes", cursive;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 20px;
+  outline: none;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 2.5rem;
+}

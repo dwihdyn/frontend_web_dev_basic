@@ -17,4 +17,6 @@ Projects done :
     <li>Day7 : <strong>| Incomplete | </strong> Hangman game - (DOM manipulation test) by javascript</li>
     <li>Day8 : <strong>| Incomplete | </strong> TicTacToe - by html & css</li>
     <li>Day8 : <strong>| Incomplete | </strong> TicTacToe - by javascript</li>
+    <li>Day9 : Random Chuck Norris Jokes - API Challenge - </li>
+    <li>Day9 : Random GIF & search by category - API Challenge - </li>
 </ol>
