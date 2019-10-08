@@ -6,10 +6,10 @@ step3 : printout the data
 */
 
 fetch("https://api.chucknorris.io/jokes/random") // get the jokes from this site
-  .then(function(rESpOnSe) {
-    console.log(rESpOnSe);
+  .then(function(joanna) {
+    console.log(joanna);
     // debugger;
-    return rESpOnSe.json(); // converts given link to json (lists of objects). output is successful (200) or unsuccessful (400)
+    return joanna.json(); // converts given link to json (lists of objects). output is successful (200) or unsuccessful (400)
   })
   // below create function that printout the joke, with name called 'dAtA'
   .then(function(dAtA) {
