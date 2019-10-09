@@ -19,4 +19,6 @@ Projects done :
     <li>Day8 : <strong>| Incomplete | </strong> TicTacToe - by javascript</li>
     <li>Day9 : Random Chuck Norris Jokes - API Challenge - </li>
     <li>Day9 : Random GIF & search by category - API Challenge - </li>
+    <li>Day10 : Message Board - by JQuery, bootstrap, moment.js - </li>
+    <li>Day10 - Bonus : <strong>| Incomplete | </strong> vanillaJS to JQuery converting challenge </li>
 </ol>
