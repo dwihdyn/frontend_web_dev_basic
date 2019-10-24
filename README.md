@@ -1,4 +1,4 @@
-# frontend_web_dev_basic
+# Frontend-web-dev-basic
 
 <h3>All materials from the mentors can be found <a href="https://docs.google.com/spreadsheets/d/15oVguqIGNBuBDwIcmWkViIB_6qkgWXO26rh-AVfSDPY/edit#gid=2145330360">HERE</a></h3>
 
